@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resharper.JSHint.UITest</RootNamespace>
+    <AssemblyName>Resharper.JSHint.UITest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resharper.JSHint\Resharper.JSHint.csproj">
+      <Project>{B2AC8777-764D-4176-8A9E-9AD934106437}</Project>
+      <Name>Resharper.JSHint</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ReSharperSdkTargets Condition=" '$(ReSharperSdkTargets)' == '' ">$(MSBuildExtensionsPath)\JetBrains\ReSharper.SDK\v7.0</ReSharperSdkTargets>
+    <ReSharperSdk Condition="'$(ReSharperSdk)'==''">C:\Program Files (x86)\JetBrains\ReSharper\v7.0\SDK\</ReSharperSdk>
+    <ReSharperSdkBinaries Condition="'$(ReSharperSdkBinaries)'==''">$(ReSharperSdk)\Bin</ReSharperSdkBinaries>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="JetBrains.ReSharper.Intentions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Intentions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.ComponentModel">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.ComponentModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.DocumentManager">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.DocumentManager.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.DocumentModel">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.DocumentModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.ProjectModel">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.ProjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.Shell">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.Shell.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.Symbols">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.Symbols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.TextControl">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.TextControl.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.UI">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Daemon">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Daemon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Feature.Services">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Feature.Services.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.CSharp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.CSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.JavaScript">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.JavaScript.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.Platform.ReSharper.Util">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.Platform.ReSharper.Util.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.Html">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.Html.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.Html.Javascript">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.Html.Javascript.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JetBrains.ReSharper.Psi.Web">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ReSharperSdkBinaries)\JetBrains.ReSharper.Psi.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{908CF7A1-78C8-4CD7-AABA-43B20E1B57BE}"
+	ProjectSection(SolutionItems) = preProject
+		test\data\Daemon\JavaScript\Closure.js = test\data\Daemon\JavaScript\Closure.js
+		test\data\Daemon\JavaScript\Closure.js.gold = test\data\Daemon\JavaScript\Closure.js.gold
+		test\data\Daemon\JavaScript\config.json = test\data\Daemon\JavaScript\config.json
+		test\data\Daemon\JavaScript\GlobalsSemiAndComma.js = test\data\Daemon\JavaScript\GlobalsSemiAndComma.js
+		test\data\Daemon\JavaScript\GlobalsSemiAndComma.js.gold = test\data\Daemon\JavaScript\GlobalsSemiAndComma.js.gold
+		test\data\Daemon\JavaScript\jquery-1.7.2.js = test\data\Daemon\JavaScript\jquery-1.7.2.js
+		test\data\Daemon\JavaScript\jquery-1.7.2.js.gold = test\data\Daemon\JavaScript\jquery-1.7.2.js.gold
+		test\data\Daemon\JavaScript\MingledAspx.aspx = test\data\Daemon\JavaScript\MingledAspx.aspx
+		test\data\Daemon\JavaScript\MingledAspx.aspx.gold = test\data\Daemon\JavaScript\MingledAspx.aspx.gold
+		test\data\Daemon\JavaScript\MingledHtml.htm = test\data\Daemon\JavaScript\MingledHtml.htm
+		test\data\Daemon\JavaScript\MingledHtml.htm.gold = test\data\Daemon\JavaScript\MingledHtml.htm.gold
+		test\data\Daemon\JavaScript\OneLineWithUndefined.js = test\data\Daemon\JavaScript\OneLineWithUndefined.js
+		test\data\Daemon\JavaScript\OneLineWithUndefined.js.gold = test\data\Daemon\JavaScript\OneLineWithUndefined.js.gold
+		test\data\Daemon\JavaScript\UndefinedGlobalAndSemi.js = test\data\Daemon\JavaScript\UndefinedGlobalAndSemi.js
+		test\data\Daemon\JavaScript\UndefinedGlobalAndSemi.js.gold = test\data\Daemon\JavaScript\UndefinedGlobalAndSemi.js.gold
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{50EE38B1-E45D-4CF6-B31D-34CC5B8AF240}"
+	ProjectSection(SolutionItems) = preProject
+		conflicts between rs and jslint.txt = conflicts between rs and jslint.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ResharperIssues.TestData", "ResharperIssues.TestData", "{5C34135E-9FCA-4ADA-A538-56E8C4DE704B}"
+	ProjectSection(SolutionItems) = preProject
+		test\data\Daemon\JavaScript\mingled_directive_hacked.htm = test\data\Daemon\JavaScript\mingled_directive_hacked.htm
+		test\data\Daemon\JavaScript\mingled_directive_hacked.htm.gold = test\data\Daemon\JavaScript\mingled_directive_hacked.htm.gold
+		test\data\Daemon\JavaScript\mingled_directive_ignored.htm = test\data\Daemon\JavaScript\mingled_directive_ignored.htm
+		test\data\Daemon\JavaScript\mingled_directive_ignored.htm.gold = test\data\Daemon\JavaScript\mingled_directive_ignored.htm.gold
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.JSHint", "Resharper.JSHint\Resharper.JSHint.csproj", "{B2AC8777-764D-4176-8A9E-9AD934106437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.JSHint.Tests", "Resharper.JSHint.Tests\Resharper.JSHint.Tests.csproj", "{9DFAEE0E-9220-481A-9439-7D41854DBBAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.JSHint.UITest", "Resharper.JSHint.UITest\Resharper.JSHint.UITest.csproj", "{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B2AC8777-764D-4176-8A9E-9AD934106437}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9DFAEE0E-9220-481A-9439-7D41854DBBAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Debug|x86.ActiveCfg = Debug|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Debug|x86.Build.0 = Debug|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Release|Any CPU.ActiveCfg = Release|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Release|x86.ActiveCfg = Release|x86
+		{6741FEA8-9DF2-48CB-A062-E4D73245A7D7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
