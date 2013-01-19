@@ -7,6 +7,12 @@ A fork on [JSLint plugin for Resharper](http://resharperjslint.codeplex.com/) th
  - [Resharper 7.0](http://www.jetbrains.com/resharper/),
  - [Resharper 7.0 SDK](http://download.jetbrains.com/resharper/ReSharperSDK-7.1.96.msi) for development
 
+## Installation
+ - Get the project,
+ - Build it,
+ - Copy `Resharper.JSHint.dll` to `C:\Program Files (x86)\JetBrains\ReSharper\v7.1\Bin\Plugins\` or wherever
+   your Resharper plugins live
+
 ## Differences to JSHint plugin
  - Apparantly uses JSHint,
  - Additional configuration option is avaliable to pass the path to JSON formatted JSHint configuration.
