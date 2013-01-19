@@ -1,0 +1,24 @@
+/*jslint browser: true */
+/*global alert*/
+
+|aGlobal = "";|(0)
+
+|aGlobalFunction();|(1)
+
+alert("no semicolon"|)|(2)
+
+aGlobal;	// overridden by resharper
+
+alert("double") alert(" no semi");	// overridden by resharper
+
+var i, x;
+i = |2|(3), x = 3;
+
+---------------------------------------------------------
+(0): ReSharper Warning: 'aGlobal' was used before it was defined.
+(1): ReSharper Warning: 'aGlobalFunction' was used before it was defined.
+(2): ReSharper Warning: Expected ';' and instead saw 'aGlobal'.
+(3): ReSharper Warning: Expected ';' and instead saw ','.
+Expected ',' at column 1, not column 6.
+Expected an identifier and instead saw ','.
+Stopping. (93% scanned).

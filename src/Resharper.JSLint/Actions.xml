@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<actions>
+  <insert group-id="ReSharper" position="last">
+    <action-group id="Resharper.JSLint" text="JSLint for Resharper">
+      <action id="Resharper.JSLint.About" text="About JSLint for Resharper"/>
+      <action id="Resharper.JSLint.Settings" text="Settings"/>
+      <!-- to break up elements use <separator/> -->
+    </action-group>
+  </insert>
+</actions>

@@ -1,0 +1,12 @@
+(function () {
+	|var hello = "Hello world";|(0)
+	|alert(hello);|(1)
+		|hello.split(";");|(2)
+}| |(3)());
+
+
+---------------------------------------------------------
+(0): ReSharper Warning: Missing 'use strict' statement.
+(1): ReSharper Warning: 'alert' was used before it was defined.
+(2): ReSharper Warning: Expected 'hello' at column 5, not column 9.
+(3): ReSharper Warning: Unexpected space between '}' and '('.

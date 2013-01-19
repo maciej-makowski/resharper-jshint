@@ -1,0 +1,22 @@
+<%@ Page Language="C#" %>
+
+<asp:Content runat="server" ID="yeahyea">
+	
+	<script type="text/javascript">
+
+	/*jslint devel: true*/
+		var thisShite;
+		var isNot = "allowed";
+		|because = "it's not declared";|(0)
+		(function() {
+			andDeclared = "somewhere else";
+			alert("so what");
+		}|)|(1)();
+
+
+	</script>
+
+</asp:Content>
+---------------------------------------------------------
+(0): ReSharper Warning: 'because' was used before it was defined.
+(1): ReSharper Warning: Move the invocation into the parens that contain the function.

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Most of these overridden by R#
+		|one|(0)
+		flew("over"|)|(1)
+		the.cookoos;
+		|nest|(2) |{|(3)
+
+		}
+	</script>
+
+	<h1>
+
+	</h1>
+
+	<script type="text/javascript">
+		(function () {
+			but.some("of these", |will|(4), |be|(5).taken);
+		}|)|(6)();
+	</script>
+</body>
+</html>
+
+---------------------------------------------------------
+(0): ReSharper Warning: 'one' was used before it was defined.
+Expected an assignment or function call and instead saw an expression.
+Expected ';' and instead saw 'flew'.
+(1): ReSharper Warning: Expected ';' and instead saw 'the'.
+(2): ReSharper Warning: 'nest' was used before it was defined.
+(3): ReSharper Warning: Expected an operator and instead saw '{'.
+Stopping. (71% scanned).
+(4): ReSharper Warning: 'will' was used before it was defined.
+(5): ReSharper Warning: 'be' was used before it was defined.
+(6): ReSharper Warning: Move the invocation into the parens that contain the function.

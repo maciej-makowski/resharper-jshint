@@ -1,0 +1,2 @@
+﻿Expected an assignment or function call and instead saw an expression.
+	- Caught by Resharper and apparently hidden when attempted highlighted on same node

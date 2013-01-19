@@ -1,0 +1,8 @@
+|hello = "Hello world";|(0)
+|alert(hello);|(1)
+hello.split(";"|)|(2)
+
+---------------------------------------------------------
+(0): ReSharper Warning: 'hello' was used before it was defined.
+(1): ReSharper Warning: 'alert' was used before it was defined.
+(2): ReSharper Warning: Expected ';' and instead saw '(end)'.
